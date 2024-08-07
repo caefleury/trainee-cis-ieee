@@ -3,7 +3,8 @@ Repositório com o codigo dos desafios semanais do kaggle
 
 ## Treinamento CIS - 1º Período (Regressão)
 
-###Conteúdos do Período
+### Conteúdos do Período
+
 a. Conceitos básicos de Data Science (DS);
 b. Python para DS;
 c. Manipulação de base de dados;
