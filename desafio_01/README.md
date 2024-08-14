@@ -1,88 +1,69 @@
-# Dataset Description
-No Airbnb, qualquer pessoa que tenha um quarto ou um imóvel de qualquer tipo (apartamento, casa, chalé, pousada, etc.) pode ofertar o seu imóvel para ser alugado por diária.
+# Treinamento CIS - 1º Período (Regressão)
 
-Você cria o seu perfil de host (pessoa que disponibiliza um imóvel para aluguel por diária) e cria o anúncio do seu imóvel.
+## Conteúdos do Período
 
-Nesse anúncio, o host deve descrever as características do imóvel da forma mais completa possível, de forma a ajudar os locadores/viajantes a escolherem o melhor imóvel para eles (e de forma a tornar o seu anúncio mais atrativo).
+- Conceitos básicos de Data Science (DS);
+- Python para DS;
+- Manipulação de base de dados;
+- Visualização de dados;
+- Pandas, numpy, seaborn e matplotlib;
+- Normalização de parâmetros;
+- Tipos de dados;
+- Pré-processamento de dados;
+- Redução de dimensionalidade;
+- PCA;
+- Datasets de Treinamento x Validação;
+- Regressão Linear;
+- Regressão Logística.
 
-Existem dezenas de personalizações possíveis no seu anúncio, desde quantidade mínima de diária, preço, quantidade de quartos, até regras de cancelamento, taxa extra para hóspedes extras, exigência de verificação de identidade do locador, etc.
+## Conteúdos Essenciais
 
-Com base nessas informações, podemos tentar criar modelos preditivos em relação ao preço de aluguel dos imóveis ofertados, visando a identificação de preços competitivos com base em ofertas semelhantes.
+- [Tipos de Dados](https://towardsdatascience.com/data-types-in-statistics-347e152e8bee) - Artigo com os tipos de dados em modelos estatísticos;
+- [PCA StatQuest](https://youtu.be/FgakZw6K1QQ) - Vídeo explicando detalhadamente PCA;
+- [Data Imputation](https://www.datacamp.com/tutorial/techniques-to-handle-missing-data-values) - Lidando com dados faltantes;
+- [Data Encoding](https://medium.com/@vinodkumargr/08-data-encoding-in-machine-learning-different-data-encodings-onehotencoding-65f736d31ecf) - Como tratar variáveis categóricas;
+- [Padronização e Normalização](https://medium.com/@vinodkumargr/07-standardization-and-normalization-techniques-in-machine-learning-standardscaler-3890a89bddbf) - Alterando a escala dos dados;
+- [Treino e Teste ](https://www.w3schools.com/python/python_ml_train_test.asp) - Como avaliar o seu modelo;
+- [Linear Regression StatQuest](https://www.youtube.com/playlist?list=PLblh5JKOoLUIzaEkCLIUxQFjPIlapw8nU) - Playlist sobre regressão linear;
+- [Logistic Regression StatQuest](https://www.youtube.com/playlist?list=PLblh5JKOoLUKxzEP5HA2d-Li7IJkHfXSe) - Playlist sobre regressão logístic-
+- [Métricas de avaliação](https://www.geeksforgeeks.org/regression-metrics/) - Como avaliar a performance do modelo em um problema de regressão.
 
-Files: train.csv - the training set
-test.csv - the test set
-sample_submission.csv - a sample submission file in the correct format
+## Conteúdos Complementares
 
-Columns: id: Identificador único da listagem.
+- [Fundamentos de Python para Análise de Dados](https://www.datascienceacademy.com.br/course?courseid=python-fundamentos) - Curso DataScience
+  Academy, Módulos recomendados - 5, 8 e 9;
+- [Cursos do Kaggle](https://www.kaggle.com/learn/overview) - Cursos recomendados para o primeiro período -
+  Python, Data Visualization, Pandas e Data Cleaning;
+- [Playlist - Introdução à Data Science, Visualização de Dados e Machine Learning](https://www.youtube.com/playlist?list=PLMdYygf53DP7YZiFUtGTWJJlvynRyrna-) - Playlist brasileira que explica dos conceitos básicos até as
+  primeiras implementações dos conceitos citados;
+- [Python DataScience HandBook](https://github.com/jakevdp/PythonDataScienceHandbook/blob/8a34a4f653bdbdc01415a94dc20d4e9b97438965/notebooks/Index.ipynb) - Livro sobre Numpy, Pandas, Matplotlib,
+  relativamente curto e direto;
+- [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://drive.google.com/file/d/1S4j5ivHtVArowR5TEFFQocjQDx4T07bG/view?usp=sharing) -
+  Livro completo: Para o primeiro período recomendam-se os capítulos 1,
+  2, 8 e 9;
+- [Data Analysis with Dr Mike Pound](https://www.youtube.com/playlist?list=PLzH6n4zXuckpfMu_4Ff8E7Z1behQks5ba) - Playlist com diversos conceitos de
+  análise de dados avançada;
+- [Machine Learning Sentdex](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v) - Vídeos iniciais da playlist sobre MachineLearning;
+- [Tipos de modelos de regressão](https://www.upgrad.com/blog/types-of-regression-models-in-machine-learning/);
+- [CRISP-DM](https://www.youtube.com/watch?v=MDun2ffJsws) - Metodologia para projetos de dados.
 
-listing_url: URL da página da listagem na plataforma.
+## Tarefas
 
-scrape_id: Identificador único da operação de coleta de dados (scrape).
-
-last_scraped: Data da última vez que os dados foram coletados.
-
-name: Nome da propriedade.
-
-summary: Resumo curto da propriedade.
-
-space: Descrição do espaço da propriedade, incluindo áreas comuns e privadas.
-
-description: Descrição detalhada da propriedade, incluindo comodidades e características.
-
-experiences_offered: Indica se experiências (atividades) são oferecidas juntamente com a estadia.
-
-neighborhood_overview: Visão geral do bairro onde a propriedade está localizada.
-
-minimum_minimum_nights: Número mínimo de noites exigido pela reserva mínima mais baixa permitida.
-
-maximum_minimum_nights: Número máximo de noites exigido pela reserva mínima mais baixa permitida.
-
-minimum_maximum_nights: Número mínimo de noites exigido pela reserva máxima mais alta permitida.
-
-maximum_maximum_nights: Número máximo de noites exigido pela reserva máxima mais alta permitida.
-
-minimum_nights_avg_ntm: Média do número mínimo de noites exigido para reservas no próximo mês.
-
-maximum_nights_avg_ntm: Média do número máximo de noites permitido para reservas no próximo mês.
-
-number_of_reviews_ltm: Número de avaliações recebidas nos últimos doze meses.
-
-calculated_host_listings_count_entire_homes: Número de propriedades inteiras listadas pelo anfitrião.
-
-calculated_host_listings_count_private_rooms: Número de quartos privados listados pelo anfitrião.
-
-calculated_host_listings_count_shared_rooms: Número de quartos compartilhados listados pelo anfitrião.
-
-host_is_superhost: Indica se o anfitrião é um "superhost" ou não. Um superhost é um anfitrião experiente e altamente avaliado que proporciona estadias excepcionais para seus hóspedes.
-
-host_listings_count: Número total de listagens (propriedades) que o anfitrião possui na plataforma.
-
-latitude: Latitude da localização da propriedade.
-
-longitude: Longitude da localização da propriedade.
-
-accommodates: Número de hóspedes que a propriedade pode acomodar.
-
-bathrooms: Número de banheiros na propriedade.
-
-bedrooms: Número de quartos na propriedade.
-
-beds: Número de camas na propriedade.
-
-extra_people: Custo adicional por hóspede extra acima do número de hóspedes permitido.
-
-minimum_nights: Número mínimo de noites que um hóspede deve reservar.
-
-number_of_reviews: Número total de avaliações recebidas pela propriedade.
-
-instant_bookable: Indica se a propriedade pode ser reservada instantaneamente, sem a necessidade de aprovação prévia do anfitrião.
-
-amenities: Amenidades disponíveis na propriedade.
-
-property_type - Indica o tipo de propriedade.
-
-room_type - Indica o tipo de quarto.
-
-cancellation_policy: Indica o tipo de política de cancelamento.
-
-price: Preço da propriedade por noite (target).
+Para esse período, foi criada uma competição no [kaggle](https://www.kaggle.com/competitions/cis-ieee-unb-renting-houce-prices):
+a. Fazer uma análise no dataset utilizando as ferramentas aprendidas no
+período;
+b. Demonstrar como pré-processar e representar os diferentes tipos de
+dados;
+c. Demonstrar a utilização de técnicas como one-hot encoding, redução de
+dimensionalidade e PCA;
+i. Como a redução da dimensionalidade afetou no desempenho do
+modelo?
+d. Aplicar regressão nos dados - dividir o dataset em treinamento e
+validação e aplicar, pelo menos, 3 algoritmos distintos de regressão para
+prever o preço do imóvel. Testar visualizar os resultados, comparando o
+desempenho dos modelos treinados;
+i. Qual modelo performou melhor?
+e. Avaliar o desempenho do(s) modelo(s) treinado(s). A métrica da
+competição será o erro quadrático médio (MSE), porém, recomenda-se a
+avaliação do modelo por outras métricas adicionais, como o R² e o erro
+médio absoluto (MAE)
