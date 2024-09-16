@@ -1,4 +1,4 @@
-# Treinamento CIS - 3º Período (Redes Neurais)
+# Treinamento CIS - 4º Período (Redes Neurais)
 
 ## Conteúdos do Período
 
