@@ -32,12 +32,14 @@ b. [Playlist Redes Neurais Artificiais](https://www.youtube.com/watch?v=ebToEXQF
 Redes Neurais, Gradiente descendente e Backpropagation. -
 Playlist com os conceitos fundamentais sobre o perceptron e
 redes neurais (Português)
+
 - Vetor de Pesos
 - Funções de ativação
 - Backpropagation
 - Gradiente descendente
 
 c. [Neural Networks from Scratch in Python](https://www.youtube.com/playlist?list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
+
 - Passo a passo para criar uma rede neural a partir do zero
 em python
 
