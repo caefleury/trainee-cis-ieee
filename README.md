@@ -6,4 +6,4 @@ Repositório com o codigo dos desafios semanais do kaggle
 - [x] 2º Período (Classificação)
 - [x] 3º Período (Clusterização)
 - [x] 4º Período (Redes Neurais)
-- [ ] 5º Período (Rede Neural Convolucional)
+- [X] 5º Período (Rede Neural Convolucional)
